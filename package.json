@@ -1,0 +1,50 @@
+{
+  "name": "dsh-nx",
+  "version": "0.1.0",
+  "description": "Siemens NX 2512 for DeepSeek Harness: an MCP bridge that runs NXOpen journals in the open NX window, plus a left-sidebar NX panel.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "nx",
+    "siemens",
+    "nxopen",
+    "cad"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "dsh-nx-setup": "./bin/setup.mjs"
+  },
+  "files": [
+    "lib",
+    "bin",
+    "vendor",
+    "assets",
+    "cordis.patch.yml",
+    "dsh-plugin.json",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "os": [
+    "win32"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

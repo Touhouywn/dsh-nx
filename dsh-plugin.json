@@ -1,0 +1,19 @@
+{
+  "manifestVersion": "0.15",
+  "id": "dsh-nx",
+  "name": "NX 2512",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Siemens NX 2512 for DSH: MCP bridge for NXOpen journals in the open NX window, plus a left-sidebar NX panel.",
+  "keywords": ["nx", "siemens", "nxopen", "cad", "gear", "mcp"],
+  "contributes": {
+    "x-display": [
+      {
+        "icon": "./assets/icon.png",
+        "title": "NX 2512",
+        "description": "Run NXOpen journals in the running NX window (mcp__nx__*), with a sidebar panel for bridge info and gear commands.",
+        "locales": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+dsh-nx — third-party notices
+============================
+
+1. Vendored NX runtime (vendor/)
+
+   The files under vendor/ come from the codex-NX plugin bundle
+   ("Local Codex plugin for Siemens NX/DC 2512"), which declares MIT in its
+   plugin manifest (.codex-plugin/plugin.json: "license": "MIT").
+
+   Copyright (c) 2026 Local NX Automation (codex-NX project)
+   Licensed under the MIT License — the full text is in vendor/LICENSE.
+
+   Modifications made for dsh-nx:
+     - vendor/scripts/nx_mcp_server.py: read_message/write_message extended to
+       auto-detect transport framing (newline-delimited JSON used by the DSH MCP
+       client, and Content-Length used by the original Codex client).
+     - Codex-only artefacts removed (hooks.json, .codex-plugin/, .mcp.json,
+       .gitignore, __pycache__, build logs, .bak files).
+     - Launch glue replaced by bin/setup.mjs, which writes machine-specific
+       absolute paths into cordis.patch.yml.
+
+2. Siemens NX
+
+   "Siemens", "NX" and "Designcenter" are trademarks of Siemens AG. This package
+   is an independent integration: it is not affiliated with, endorsed by, or
+   sponsored by Siemens. The names are used descriptively to state what the
+   integration connects to. The package ships no Siemens binaries, icons or
+   documentation; it drives an NX installation that the user already owns and
+   licenses.
+
+3. Everything else
+
+   lib/, bin/, assets/, README.md, dsh-plugin.json and the packaging itself are
+   original work released under the MIT License (see LICENSE).

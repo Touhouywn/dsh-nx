@@ -1,0 +1,18 @@
+VERSION 120
+CREATE BUTTON_DEFINITIONS
+
+BUTTON NX2512_CONTROL_START_BRIDGE
+LABEL Start Codex Live Bridge
+TOOLBAR_LABEL Start Codex Live Bridge
+MESSAGE Starts the local Codex live bridge inside the current NX process.
+NO_REPEAT
+ACCELERATOR Ctrl+Alt+Shift+B
+ACTIONS nx2512_start_live_bridge.py
+
+BUTTON NX2512_CONTROL_CREATE_TEST_PART
+LABEL Create Codex Smoke Part
+TOOLBAR_LABEL Create Codex Smoke Part
+MESSAGE Creates a visible smoke-test modeling part in the current NX window.
+NO_REPEAT
+ACCELERATOR Ctrl+Alt+Shift+N
+ACTIONS create_codex_smoke_part.py

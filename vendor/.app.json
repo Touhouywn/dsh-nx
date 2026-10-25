@@ -1,0 +1,9 @@
+{
+  "apps": {
+    "nx": {
+      "name": "NX",
+      "entry": "./scripts/nx_bridge.ps1",
+      "type": "local-automation"
+    }
+  }
+}
